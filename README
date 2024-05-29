@@ -1,0 +1,44 @@
+This Node.js application provides APIs for user sign-up and sign-in functionalities. It allows users to register with their first name, last name, email, and password, and then authenticate themselves using their email and password.
+
+Setup Instructions:
+1. Clone Repository: git clone https://github.com/ShwetaPokale/myapp.git
+
+2. Install Dependencies: Navigate to the project directory (cd /myapp) nd install the required dependencies using npm
+npm install
+
+3. Run the Application: Start the server by running the following command:
+npm start or node server.js
+
+APIs
+1. Sign-Up
+Endpoint: POST /api/signup
+Request Body:
+{
+  "first_name": "ABC",
+  "last_name": "XYZ",
+  "email": "abcxyz@gmail.com",
+  "password": "password123"
+}
+
+Description: Register a new user with the provided details.
+
+2. Sign-In
+Endpoint: POST /api/signin
+Request Body:
+{
+  "email": "abcxyz@gmail.com",
+  "password": "password123"
+}
+Description: Authenticate a user with the provided email and password.
+
+Deployment
+This application is deployed using Render. 
+https://myapp-abh7.onrender.com
+
+Testing
+Postman Collection: A Postman collection is provided in the repository for testing the APIs. Import the collection into Postman to run the requests.
+
+https://myapp-abh7.onrender.com/api/signin
+https://myapp-abh7.onrender.com/api/signup
+
+
